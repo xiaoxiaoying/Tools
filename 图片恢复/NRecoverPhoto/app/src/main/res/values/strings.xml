@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NRecoverPhoto</string>
+    <string name="hint" formatted="false">已扫描：%s ，剩余：%s，总大小：%s</string>
+    <string name="save">保存</string>
+</resources>

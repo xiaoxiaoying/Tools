@@ -1,0 +1,47 @@
+//apply plugin: 'com.android.application'
+apply plugin: 'com.android.model.application'
+model {
+    android {
+        compileSdkVersion compileSdk
+        buildToolsVersion buildTools
+        defaultConfig {
+            applicationId "com.example.administrator.nrecoverphoto"
+            minSdkVersion.apiLevel = 15
+            targetSdkVersion.apiLevel = targetSdk
+            versionCode 1
+            versionName mavenVersion
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        }
+
+        ndk {
+//            moduleName = "recover"
+            moduleName = "photo-recover"
+            ldLibs.addAll(["log", "z", "m"])
+            abiFilters.addAll(['armeabi', 'armeabi-v7a', 'arm64-v8a',
+                               'x86', 'x86_64',
+                               'mips', 'mips64'])
+        }
+
+        buildTypes {
+            release {
+                minifyEnabled = false
+                // 这里注意：使用proguardFiles.add()方法
+                proguardFiles.add(file('proguard-rules.txt'))
+            }
+        }
+    }
+}
+
+ext {
+    supportVersion = '25.3.1'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:${supportVersion}"
+    compile "com.android.support:recyclerview-v7:${supportVersion}"
+    testCompile 'junit:junit:4.12'
+}
