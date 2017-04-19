@@ -18,10 +18,10 @@ Android 图片恢复
     1、adb shell
     2、su
     3、cat /proc/mounts
-    <img src="/resources/data_path.png" />
+    <img src="https://github.com/xiaoxiaoying/Tools/blob/master/图片恢复/NRecoverPhoto/resources/data_path.png" />
     图中/dev/block/platform/15570000.ufs/by-name/USERDATA就是data的路径
     4、查看镜像路径 ls -l /dev/block/platform/15570000.ufs/by-name/USERDATA
-    <img src="/resources/path.png"/>
+    <img src="https://github.com/xiaoxiaoying/Tools/blob/master/图片恢复/NRecoverPhoto/resources/path.png"/>
     /resources/data_path.png就是data的镜像路径
    </pre>
     
