@@ -1,4 +1,4 @@
-### 使用说明
+### Tools
 
 #### 1、恢复图片
 [图片恢复代码](https://github.com/xiaoxiaoying/Tools/tree/master/%E5%9B%BE%E7%89%87%E6%81%A2%E5%A4%8D)  
@@ -22,3 +22,8 @@
 
 ```
 具体看demo中的配置
+
+#### Exif 读取
+C/C++ : https://github.com/mkttanabe/exif https://github.com/twitter-university/Exify
+
+js: https://github.com/exif-js/exif-js
