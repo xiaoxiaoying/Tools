@@ -39,6 +39,8 @@
 ```
 
 #### Exif 读取
+[Exif](https://github.com/xiaoxiaoying/Tools/tree/master/Exif) 
+
 C/C++ : https://github.com/mkttanabe/exif https://github.com/twitter-university/Exify
 
 js: https://github.com/exif-js/exif-js
