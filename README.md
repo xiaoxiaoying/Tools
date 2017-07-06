@@ -23,6 +23,21 @@
 ```
 具体看demo中的配置
 
+#### 3、Java / Kotlin 获取文件MimeType
+```Kotlin
+            //get file extension
+            val extension: String? = MimeTypeUtils.getExtension("modernizr.js")
+            println(" s = ${extension ?: " is null"}")
+            
+            val hasExtension: Boolean = MimeTypeUtils.hasExtension(extension!!)
+            println(" hasExtension = ${hasExtension}")
+
+            val type: String? = MimeTypeUtils.guessMimeTypeFromExtension(extension)
+
+            println(" MimoType = ${type ?: " null "}")
+
+```
+
 #### Exif 读取
 C/C++ : https://github.com/mkttanabe/exif https://github.com/twitter-university/Exify
 
